@@ -3,7 +3,7 @@ import random
 
 empty=[]
 
-str=input("Enter a string : ")
+str=input("Enter a string: ")
 lst=list(str)
 
 while True:
