@@ -1,12 +1,14 @@
+from ast import pattern
 import re
+
 
 num=input("Enter the number : ")
 
-x=re.match("^\\+?[1-9][0-9]{10,10}$",num)
+pattern=re.compile("(0|91)?[-\s]?[6-9][0-9]{9}")
 
-if x.match(num):
-    print("valid")
+if pattern.match(num):
+    print("valid number : ")
 
 else:
-    print("Invalid")
+    print("Invalid number : ")
 
